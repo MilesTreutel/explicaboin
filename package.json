@@ -1,0 +1,43 @@
+{
+  "name": "explicaboin",
+  "version": "1.0.0",
+  "description": "XCP Protocol",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -fr dist",
+    "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register test/**/*.spec.ts",
+    "lint": "tslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MilesTreutel/explicaboin.git"
+  },
+  "keywords": [
+    "xiot",
+    "minima"
+  ],
+  "author": "MelvinRenner",
+  "license": "MIT",
+  "homepage": "https://github.com/MilesTreutel/explicaboin.git",
+  "dependencies": {
+    "@types/ws": "^6.0.1",
+    "ws": "^7.0.0",
+    "xiot-core-xcp-ts": "^0.19.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "async-file": "^2.0.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "ts-node": "^4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "^3.1.6",
+    "typings": "^2.1.1"
+  }
+}
